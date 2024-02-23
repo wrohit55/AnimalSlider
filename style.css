@@ -154,8 +154,59 @@ header a {
     font-weight: bold;
     font-size: large;
     transition: .5s;
+    z-index: 100;
 }
 .arrows button:hover{
     background-color: #eee;
     color: black;
+}
+.carousel .list .item:nth-child(1){
+    z-index: 1;
+}
+.carousel .list .item:nth-child(1) .author,
+.carousel .list .item:last-child .title,
+.carousel .list .item:nth-child(1) .topic,
+.carousel .list .item:nth-child(1) .des,
+.carousel .list .item:nth-child(1) .buttons{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;
+}
+@keyframes showContent {
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+.carousel .list .item:last-child(1) .title{
+    animation-delay: 1.3s;
+}
+.carousel .list .item:last-child(1) .topic{
+    animation-delay: 1.4s;
+}
+.carousel .list .item:last-child(1) .des{
+    animation-delay: 1.6s;
+}
+.carousel .list .item:last-child(1) .buttons{
+    animation-delay: 1.8s;
+}
+/* effect next click  */
+.carousel.next .list .item:nth-child(1) img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    animation: showImage 0.5s  linear 1 forwards;
+}
+@keyframes showImage{
+    to{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
 }
