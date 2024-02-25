@@ -306,3 +306,65 @@ header a{
         font-size: 30px;
     }
 }
+
+/* contact page */
+.contact {
+    height: 100vh;
+    margin-top: -50px;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background-image: url("./image/img2.jpg");
+    
+
+
+}
+.contact-form{
+    padding-right: 20px;
+}
+.contact-form-container {
+    border-radius: 20px;
+    margin: 150px;
+    margin-left: 400px;
+    background-color: #00000049;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #fffbfb;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #004494;
+}
