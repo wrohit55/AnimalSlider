@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Journey</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -84,7 +84,7 @@
                 <div class="content">
                     <div class="author">Wrohit</div>
                     <div class="title">Beautyful Nepal</div>
-                    <div class="topic">Mount Evrest</div>
+                    <div class="topic">Mount Everest</div>
                     <div class="des">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
                         placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
@@ -148,16 +148,67 @@
         <!-- next prev -->
 
         <div class="arrows">
-            <button id="prev">
-                << /button>
-                    <button id="next">></button>
+            <button id="prev"><- </button>
+                    <button id="next">-></button>
         </div>
         <!-- time running -->
         <div class="time"></div>
     </div>
     <!-- Landing page ends -->
-    <div>hello</div>
 
+
+
+    <!-- Footer section  starts here -->
+    <footer id="footer">
+        <div class="footer-content">
+            <section class="about">
+                <h3>About The Journey</h3>
+                <p>Discover the world with us, explore stunning destinations and create unforgettable memories.</p>
+            </section> 
+            <section class="contactt">
+                <h3>Contact Us</h3>
+                <p>Email: info@thejourney.com</p>
+                <p>Phone: +123 456 7890</p>
+            </section>
+            <section class="follow">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </section>
+            <section class="newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for the latest updates</p>
+                <input type="email" placeholder="Your Email">
+                <button onclick="subscribeNewsletter()">Subscribe</button>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Journey. All rights reserved.</p>
+        </div>
+    </footer> 
+
+    <!-- <footer>
+        <div class="footer-container">
+            <div class="about-section">
+                <h3>About The Journey</h3>
+                <p>Embark on unforgettable journeys and explore the wonders of the world with us. Your adventure starts here.</p>
+            </div>
+            <div class="newsletter-section">
+                <h3>Stay Updated</h3>
+                <input type="email" placeholder="Enter your email" id="newsletter-email">
+                <button onclick="subscribeNewsletter()">Subscribe</button>
+            </div>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer> -->
+    <!-- Footer section ends here -->
 
     <script src="app.js"></script>
 </body>

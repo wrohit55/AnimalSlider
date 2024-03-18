@@ -47,3 +47,13 @@ function showSlider(type){
         next.click();
     }, timeAutoNext)
 }
+
+function subscribeNewsletter() {
+    var email = document.querySelector('.newsletter input[type=email]').value;
+    if(email) {
+        // Add your code here to handle the subscription request, e.g., using fetch API to send the email to your server
+        alert("Thank you for subscribing!");
+    } else {
+        alert("Please enter your email.");
+    }
+}
